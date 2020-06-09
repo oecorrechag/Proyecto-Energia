@@ -53,8 +53,22 @@ De la figura anterior se observa que el precio promedio es mayor en los meses de
 
 De las dos anteriores graficas se puede observar que la serie se suavisa, sin embargo la serie que se ajustara seria la segunda, promedio diario.
 
+**Modelo**
 
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/modelo.PNG)
 
+Se realizo un ajuste de una red neuronal LSTM con un rezago de L = 3, función de perdida MSE, y optimizador Adam. 
 
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/fit.PNG)
+
+De la figura anterior el modelo se ajusta bien hasta llegar a octubre 2015, donde el modelo no logra ajustar correctamente los precios, sin embargo, los demás precios si logra predecirlos lo mejor posible, por lo cual es necesario más datos o modificar la arquitectura usada.
 
 **Resultados y conclusiones**
+
+Se obtuvo un RSME 11.79 en train y 111.5 en test, esta diferencia de error se da por el fenómeno del niño. Para un próximo análisis se realizará un ajuste con redes neuronales convolucionales, otro ajuste con modelos para series de tiempo clásicos (ARIMAS), otro ajuste reduciendo el tamaño de test ya que se cuenta con una gran cantidad de datos y otro ajuste omitiendo los datos afectados por el fenómeno del niño. 
+
+**Bibliografia**
+
+Comisión de regulación de energía y gas (CREG). (2020). Estructura Tarifaria. [Figura]. Recuperado de: https://www.creg.gov.co/
+
+Keras. (2020). LSTM layer. Recuperado de: https://keras.io
