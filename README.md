@@ -47,15 +47,17 @@ De la figura anterior se observa que el precio promedio es mayor al iniciar el m
 
 De la figura anterior se observa que el precio promedio es mayor en los meses de marzo y octubre siendo estos los meses correspondientes a temporada húmeda, y precios bajos entre los meses de diciembre a marzo y julio a agosto, meses correspondientes a temporada seca.
 
-![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/serie.png)
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/serie.PNG)
 
 ![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/serie_diaria.png)
 
 De las dos anteriores graficas se puede observar que la serie se suavisa, sin embargo la serie que se ajustara seria la segunda, promedio diario.
 
+**Nota:** El resto del análisis se encuentra en el archivo Python.
+
 **Modelo**
 
-![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/modelo.png)
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/modelo.PNG)
 
 Se realizo un ajuste de una red neuronal LSTM con un rezago de L = 3, función de perdida MSE, y optimizador Adam. 
 
