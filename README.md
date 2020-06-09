@@ -27,7 +27,7 @@ Se cuenta con 23 archivos en los cuales se encuentra los precios diarios por hor
 
 Realizar el estudio la estructura temporal o dinámica de los datos de la energía eléctrica en Colombia para posteriormente realizar pronóstico del precio.
 
-**Resultados y conclusiones**
+**Análisis** 
 
 Se encontraron 238 registros nulos y 1951 registros duplicados que fueron retirados. Se organiza la serie de tiempo por precio medio diario.
 
@@ -35,5 +35,26 @@ Se encontraron 238 registros nulos y 1951 registros duplicados que fueron retira
 
 **Nota:** El pico que se encuentra entre los años 2015 y 2016 se debe al fenomeno del niño, por lo que no se debe ni modificar ni retirar. 
 
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/maximo_laborales.PNG)
+
+De la figura anterior se observa que para los días entre lunes a viernes (días laborales), el precio máximo por hora se presenta entre las 6 y las 9 (horario prime time) las horas con el precio mayor de energía eléctrica. Los días no laborales también presentan los mayores precios en horario prime time, pero con precios menores que los días laborales.
+
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/dia.PNG)
+
+De la figura anterior se observa que el precio promedio es mayor al iniciar el mes, y esto va decayendo gradualmente a través del mes. 
+
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/mes.PNG)
+
+De la figura anterior se observa que el precio promedio es mayor en los meses de marzo y octubre siendo estos los meses correspondientes a temporada húmeda, y precios bajos entre los meses de diciembre a marzo y julio a agosto, meses correspondientes a temporada seca.
+
 ![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/serie.PNG)
 
+![alt text](https://github.com/oecorrechag/Proyecto-Montreal-Energia/blob/master/serie_diaria.PNG)
+
+De las dos anteriores graficas se puede observar que la serie se suavisa, sin embargo la serie que se ajustara seria la segunda, promedio diario.
+
+
+
+
+
+**Resultados y conclusiones**
